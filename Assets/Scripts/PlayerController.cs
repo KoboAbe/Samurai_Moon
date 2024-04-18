@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.SceneManagement; // Necesario para cargar escenas
+using System;
 
 public class PlayerController : MonoBehaviour
 {
@@ -9,6 +11,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private Animator animator;
     private SpriteRenderer spriteRenderer;
+    private bool isAttacking;
 
     private void Start()
     {
@@ -36,10 +39,12 @@ public class PlayerController : MonoBehaviour
             Jump();
         }
 
-        if (attackInput)
+        if (attackInput && !isAttacking) // Solo atacar si no estamos ya atacando
         {
-            Attack();
+            StartAttack();
         }
+
+        CheckGameOver(); // Verificar si se cumple la condición de Game Over
     }
 
     private void MovePlayer(float horizontalInput)
@@ -60,9 +65,24 @@ public class PlayerController : MonoBehaviour
         animator.SetBool("Jump", true);
     }
 
-    private void Attack()
+    private void StartAttack()
     {
+        isAttacking = true;
         animator.SetTrigger("Attack");
+    }
+
+    public void FinishAttack()
+    {
+        isAttacking = false;
+    }
+
+    private void CheckGameOver()
+    {
+        if (transform.position.y < -2f)
+        {
+            // Mostrar mensaje de Game Over en consola
+            Debug.LogError("<color=red>Game Over</color>");
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
