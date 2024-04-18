@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -10,27 +8,27 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody2D rb;
     private Animator animator;
-    private SpriteRenderer spriteRenderer; // Referencia al SpriteRenderer
+    private SpriteRenderer spriteRenderer;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        spriteRenderer = GetComponent<SpriteRenderer>(); // Obtener el SpriteRenderer
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     private void Update()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
         bool jumpInput = Input.GetKeyDown(KeyCode.Space);
-        bool attackInput = Input.GetKeyDown(KeyCode.E); // Tecla "E" para atacar
+        bool attackInput = Input.GetKeyDown(KeyCode.E);
 
         MovePlayer(horizontalInput);
         UpdateAnimator(horizontalInput);
 
         if (horizontalInput != 0)
         {
-            FlipSprite(horizontalInput); // Girar el sprite según la dirección del movimiento
+            FlipSprite(horizontalInput);
         }
 
         if (jumpInput && isGrounded)
@@ -52,27 +50,18 @@ public class PlayerController : MonoBehaviour
 
     private void UpdateAnimator(float horizontalInput)
     {
-        float movementSpeed = Mathf.Abs(horizontalInput);
-        animator.SetFloat("Speed", movementSpeed);
+        animator.SetBool("Running", horizontalInput != 0);
     }
 
     private void Jump()
     {
         rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         isGrounded = false;
-
-        Debug.Log("Jump!");
-
-        // Trigger jump animation or other logic
-        animator.SetTrigger("Jump");
+        animator.SetBool("Jump", true);
     }
 
     private void Attack()
     {
-        // Aquí puedes implementar la lógica de ataque
-        Debug.Log("Attack!");
-
-        // Trigger attack animation or other logic
         animator.SetTrigger("Attack");
     }
 
@@ -81,29 +70,12 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
+            animator.SetBool("Jump", false);
         }
-        else if (collision.gameObject.CompareTag("Enemy"))
-        {
-            TakeDamage();
-        }
-    }
-
-    private void TakeDamage()
-    {
-        // Implementar la lógica para recibir daño
-        Debug.Log("Player takes damage!");
     }
 
     private void FlipSprite(float horizontalInput)
     {
-        // Girar el sprite del jugador según la dirección del movimiento
-        if (horizontalInput > 0)
-        {
-            spriteRenderer.flipX = false; // No voltear (mirando a la derecha)
-        }
-        else if (horizontalInput < 0)
-        {
-            spriteRenderer.flipX = true; // Voltear horizontalmente (mirando a la izquierda)
-        }
+        spriteRenderer.flipX = horizontalInput < 0;
     }
 }
