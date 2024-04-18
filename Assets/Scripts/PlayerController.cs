@@ -44,7 +44,7 @@ public class PlayerController : MonoBehaviour
             StartAttack();
         }
 
-        CheckGameOver(); // Verificar si se cumple la condición de Game Over
+        // CheckGameOver(); // Verificar si se cumple la condición de Game Over
     }
 
     private void MovePlayer(float horizontalInput)
@@ -76,14 +76,14 @@ public class PlayerController : MonoBehaviour
         isAttacking = false;
     }
 
-    private void CheckGameOver()
-    {
-        if (transform.position.y < -2f)
-        {
-            // Mostrar mensaje de Game Over en consola
-            Debug.LogError("<color=red>Game Over</color>");
-        }
-    }
+    // private void CheckGameOver()
+    // {
+    //     if (transform.position.y < -2f)
+    //     {
+    //         // Mostrar mensaje de Game Over en consola
+    //         Debug.LogError("<color=red>Game Over</color>");
+    //     }
+    // }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
