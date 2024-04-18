@@ -11,7 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Miguel Diaz/Story.unity
     guid: 2352b4f3f2c09d24e8308f4a11243ab9
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Miguel Diaz/Cinematic.unity
     guid: 15ac354f4f73b1e489e45c2a7e9e8de8
+  - enabled: 1
+    path: Assets/Scenes/JacoboTest_Scene.unity
+    guid: 138a41f5f315a804cbc7cb0f995f5a07
   m_configObjects: {}
