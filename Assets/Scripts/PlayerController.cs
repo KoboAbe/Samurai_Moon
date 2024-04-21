@@ -29,11 +29,6 @@ public class PlayerController : MonoBehaviour
         MovePlayer(horizontalInput);
         UpdateAnimator(horizontalInput);
 
-        if (horizontalInput != 0)
-        {
-            FlipSprite(horizontalInput);
-        }
-
         if (jumpInput && isGrounded)
         {
             Jump();
@@ -94,8 +89,5 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void FlipSprite(float horizontalInput)
-    {
-        spriteRenderer.flipX = horizontalInput < 0;
-    }
+   
 }
