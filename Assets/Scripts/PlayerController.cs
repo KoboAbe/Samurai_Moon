@@ -1,6 +1,4 @@
 using UnityEngine;
-using UnityEngine.SceneManagement; // Necesario para cargar escenas
-using System;
 
 public class PlayerController : MonoBehaviour
 {
@@ -11,7 +9,6 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private Animator animator;
     private SpriteRenderer spriteRenderer;
-    private bool isAttacking;
 
     private void Start()
     {
@@ -22,66 +19,60 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        HandleMovement();
+        HandleAttack();
+    }
+
+    private void HandleMovement()
+    {
         float horizontalInput = Input.GetAxis("Horizontal");
-        bool jumpInput = Input.GetKeyDown(KeyCode.Space);
-        bool attackInput = Input.GetKeyDown(KeyCode.E);
+        Vector2 movement = new Vector2(horizontalInput * speed, rb.velocity.y);
+        rb.velocity = movement;
 
-        MovePlayer(horizontalInput);
         UpdateAnimator(horizontalInput);
+        FlipSprite(horizontalInput);
 
-        if (horizontalInput != 0)
-        {
-            FlipSprite(horizontalInput);
-        }
-
-        if (jumpInput && isGrounded)
+        // Controlar el salto usando el eje vertical
+        float verticalInput = Input.GetAxis("Vertical");
+        if (verticalInput > 0f && isGrounded) // Verificar si se presiona hacia arriba y el jugador está en el suelo
         {
             Jump();
         }
 
-        if (attackInput && !isAttacking) // Solo atacar si no estamos ya atacando
-        {
-            StartAttack();
-        }
-
-        CheckGameOver(); // Verificar si se cumple la condición de Game Over
-    }
-
-    private void MovePlayer(float horizontalInput)
-    {
-        Vector2 movement = new Vector2(horizontalInput * speed, rb.velocity.y);
-        rb.velocity = movement;
-    }
-
-    private void UpdateAnimator(float horizontalInput)
-    {
-        animator.SetBool("Running", horizontalInput != 0);
+        // Actualizar el parámetro "Vertical" en el Animator con la velocidad vertical actual
+        animator.SetFloat("Vertical", rb.velocity.y);
     }
 
     private void Jump()
     {
         rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         isGrounded = false;
-        animator.SetBool("Jump", true);
+        //animator.SetBool("Jump", true);
     }
 
-    private void StartAttack()
+    private void HandleAttack()
     {
-        isAttacking = true;
-        animator.SetTrigger("Attack");
-    }
-
-    public void FinishAttack()
-    {
-        isAttacking = false;
-    }
-
-    private void CheckGameOver()
-    {
-        if (transform.position.y < -2f)
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            // Mostrar mensaje de Game Over en consola
-            Debug.LogError("<color=red>Game Over</color>");
+            animator.SetTrigger("Attack");
+        }
+    }
+
+    private void UpdateAnimator(float horizontalInput)
+    {
+        animator.SetFloat("Horizontal", Mathf.Abs(horizontalInput)); // Usar valor absoluto del input horizontal
+        //animator.SetBool("Running", Mathf.Abs(horizontalInput) > 0f);
+    }
+
+    private void FlipSprite(float horizontalInput)
+    {
+        if (horizontalInput < 0f)
+        {
+            spriteRenderer.flipX = true; // Mirar hacia la izquierda
+        }
+        else if (horizontalInput > 0f)
+        {
+            spriteRenderer.flipX = false; // Mirar hacia la derecha
         }
     }
 
@@ -94,8 +85,12 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void FlipSprite(float horizontalInput)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        spriteRenderer.flipX = horizontalInput < 0;
+        if (other.gameObject.CompareTag("Fire"))
+        {
+            Debug.Log("Collected fire!");
+            Destroy(other.gameObject);
+        }
     }
 }
