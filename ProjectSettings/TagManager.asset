@@ -7,15 +7,16 @@ TagManager:
   - Ground
   - Enemy
   - Fire
+  - PJ
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - suelo
   - Water
   - UI
-  - 
-  - 
+  - enemigos
+  - jugador
   - 
   - 
   - 
