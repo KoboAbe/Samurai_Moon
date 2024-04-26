@@ -57,8 +57,8 @@ public class MoveGolem2 : MonoBehaviour
 
 
 
-        RaycastHit2D groundInfo = Physics2D.Raycast(groundController.position, Vector2.down, limit, LayerMask.NameToLayer("suelo"));
-        Debug.Log(groundInfo.collider.name);
+        RaycastHit2D groundInfo = Physics2D.Raycast(groundController.position, Vector2.down, limit);
+
         if (groundInfo == false)
         {
             //Girar
