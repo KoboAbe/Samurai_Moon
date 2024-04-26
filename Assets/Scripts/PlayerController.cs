@@ -1,10 +1,13 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
     public float speed = 5f;
     public float jumpForce = 8f;
-    public bool isGrounded;
+    public float fallMultiplier = 2.5f;
+    public float lowJumpMultiplier = 2f;
 
     private Rigidbody2D rb;
     private Animator animator;
@@ -20,52 +23,61 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         HandleMovement();
-        HandleAttack();
+        HandleJump();
+        ApplyGravity();
     }
 
     private void HandleMovement()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
-        Vector2 movement = new Vector2(horizontalInput * speed, rb.velocity.y);
-        rb.velocity = movement;
-
-        UpdateAnimator(horizontalInput);
-        FlipSprite(horizontalInput);
-
-        // Controlar el salto usando el eje vertical
         float verticalInput = Input.GetAxis("Vertical");
-        if (verticalInput > 0f && isGrounded) // Verificar si se presiona hacia arriba y el jugador está en el suelo
-        {
-            Jump();
-        }
 
-        // Actualizar el parámetro "Vertical" en el Animator con la velocidad vertical actual
-        animator.SetFloat("Vertical", rb.velocity.y);
+        // Mover al jugador horizontalmente
+        rb.velocity = new Vector2(horizontalInput * speed, rb.velocity.y);
+
+        // Actualizar el Animator
+        UpdateAnimator(horizontalInput, verticalInput);
+
+        // Voltear el sprite según la dirección horizontal
+        FlipSprite(horizontalInput);
     }
 
-    private void Jump()
+    private void HandleJump()
     {
-        rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-        isGrounded = false;
-        //animator.SetBool("Jump", true);
-    }
-
-    private void HandleAttack()
-    {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
         {
-            animator.SetTrigger("Attack");
+            // Aplicar el impulso de salto
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
     }
 
-    private void UpdateAnimator(float horizontalInput)
+    private void ApplyGravity()
     {
-        animator.SetFloat("Horizontal", Mathf.Abs(horizontalInput)); // Usar valor absoluto del input horizontal
-        //animator.SetBool("Running", Mathf.Abs(horizontalInput) > 0f);
+        // Aplicar gravedad adicional durante la caída
+        if (rb.velocity.y < 0)
+        {
+            rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
+        }
+        else if (rb.velocity.y > 0 && !Input.GetKey(KeyCode.Space))
+        {
+            rb.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
+        }
+    }
+
+    private void UpdateAnimator(float horizontalInput, float verticalInput)
+    {
+        // Configurar parámetros en el Animator para controlar el Blend Tree
+        animator.SetFloat("Horizontal", horizontalInput);
+        animator.SetFloat("Vertical", verticalInput);
+
+        // Calcular la magnitud de la velocidad para determinar el parámetro "Speed"
+        float speedMagnitude = new Vector2(horizontalInput, verticalInput).magnitude;
+        animator.SetFloat("Speed", speedMagnitude);
     }
 
     private void FlipSprite(float horizontalInput)
     {
+        // Voltear el sprite según la dirección horizontal del movimiento
         if (horizontalInput < 0f)
         {
             spriteRenderer.flipX = true; // Mirar hacia la izquierda
@@ -76,21 +88,11 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private bool IsGrounded()
     {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            isGrounded = true;
-            animator.SetBool("Jump", false);
-        }
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.CompareTag("Fire"))
-        {
-            Debug.Log("Collected fire!");
-            Destroy(other.gameObject);
-        }
+        // Verificar si el jugador está en el suelo usando un Raycast
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 0.1f, LayerMask.GetMask("Ground"));
+        return hit.collider != null;
     }
 }
+

@@ -13,13 +13,23 @@ public class Rayo : MonoBehaviour
     public float minY; // Límite mínimo en el eje Y
     public float maxY; // Límite máximo en el eje Y
 
+    public float initialXPosition = 0.0f; // Posición inicial en el eje X (variable pública)
+
     private LineRenderer line;
     private float tiempo = 0;
+    private Vector2 initialPosition; // Posición inicial del objeto Rayo (2D)
 
     void Start()
     {
         line = GetComponent<LineRenderer>();
         line.positionCount = cantidadDePuntos; // Establecer la cantidad inicial de puntos en el LineRenderer
+
+        // Asignar la posición inicial deseada desde la variable pública
+        initialPosition = new Vector2(initialXPosition, 0.0f);
+
+        // Configurar el grosor de la línea
+        line.startWidth = 0.05f;
+        line.endWidth = 0.05f;
 
         // Actualizar los puntos del LineRenderer en el inicio
         ActualizarPuntos();
@@ -35,8 +45,11 @@ public class Rayo : MonoBehaviour
             tiempo = 0;
         }
 
+        // Restaurar la posición inicial al comienzo de Update()
+        transform.position = initialPosition;
+
         // Mover el Rayo solo en el eje Y dentro de los límites minY y maxY
-        Vector3 newPosition = transform.position;
+        Vector2 newPosition = transform.position;
         newPosition.y += velocidadY * Time.deltaTime; // Mover en el eje Y
         newPosition.y = Mathf.Clamp(newPosition.y, minY, maxY); // Aplicar restricciones en Y
         transform.position = newPosition;
