@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class PlayerFight : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private float vida;
 
-    // Update is called once per frame
-    void Update()
+    public void TomarDaño(float daño)
     {
-        
+        vida -= daño;
+
+        if (vida <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 }

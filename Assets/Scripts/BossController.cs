@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Jefe : MonoBehaviour
+public class BossController : MonoBehaviour
 {
     private Animator animator;
     public Rigidbody2D rb2D;
@@ -11,6 +11,8 @@ public class Jefe : MonoBehaviour
 
     [Header("Vida")]
     [SerializeField] private float vida;
+
+    //[SerializeField] private BarraDeVida barraDeVida;
 
     [Header("Ataque")]
     [SerializeField] private Transform controladorAtaque;
@@ -22,6 +24,7 @@ public class Jefe : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         rb2D = GetComponent<Rigidbody2D>();
+        //barraDeVida.InicializarBarraDeVida(vida);
         jugador = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 
@@ -35,9 +38,11 @@ public class Jefe : MonoBehaviour
     {
         vida -= daño;
 
+        //barraDeVida.CambiarVidaActual(vida);
+
         if (vida <= 0)
         {
-            animator.SetTrigger("Muerte");
+            animator.SetTrigger("Death");
         }
     }
 
@@ -63,7 +68,7 @@ public class Jefe : MonoBehaviour
         {
             if (colision.CompareTag("Player"))
             {
-                colision.GetComponent<CombateJugador>().TomarDaño(dañoAtaque);
+                colision.GetComponent<PlayerFight>().TomarDaño(dañoAtaque);
             }
         }
     }
