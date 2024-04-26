@@ -1,0 +1,1942 @@
+fileFormatVersion: 2
+guid: af7f5eb1fc0e6a84ea5dd4bc1c411fc9
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 228}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: 0
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 2619
+        width: 140
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b7a1bc9732723945aa871432afff2f7
+      internalID: 1824270770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_1
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 2611
+        width: 135
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2303c3149f2e5bc4d901e8c8a70f4cb5
+      internalID: 1635138104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_2
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 2611
+        width: 136
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e349bfd0ad705fe46959bfb5cf25af64
+      internalID: -442723986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_3
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 2608
+        width: 142
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18df9508ffd03134ca2ff4fdf96fea9b
+      internalID: 1401800497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_12
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 2606
+        width: 123
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3755394d12a904c4ca83c12e5a48172e
+      internalID: -1414798705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_14
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 2613
+        width: 129
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d017af30b2139c4ba15bee38bc6f7f6
+      internalID: -38291576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_15
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 2366
+        width: 145
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b341a0fc5882ba488b94dd7368cdc4b
+      internalID: 1884442532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_24
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 2359
+        width: 150
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82c6e2b2656ef9b4f8e0d6160035dabe
+      internalID: 441375541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_25
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 2356
+        width: 146
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bad83ecf7f63fe849b907fd4a3056173
+      internalID: -1777916937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_28
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 2342
+        width: 148
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23fc0c35d2922674e8bf5d98c28b4dec
+      internalID: -33957539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_31
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 2341
+        width: 147
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d046a5bd160ab064a95f02f97b315b32
+      internalID: -547515331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_32
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 2339
+        width: 139
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 230e0d00244d1134db15cba6672abfe0
+      internalID: 1383811943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_40
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 2112
+        width: 140
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 483a1ce4c699124429753c42306e0b2f
+      internalID: -1704126111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_41
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 2104
+        width: 135
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d89addc129de2244abaf515b6a2f18db
+      internalID: 1597113895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_42
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 2088
+        width: 135
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caeccb229f21d6844981d5d45225eef1
+      internalID: -2012839372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_43
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 2075
+        width: 142
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 798a78a74ab2f7e448c798abd6f3c366
+      internalID: -1580905610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_48
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 2073
+        width: 122
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ecbc2b80632ecc4ab43fb618281e498
+      internalID: -1801904695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_49
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 2076
+        width: 130
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61f039c8f379a7d4bbd5b10e903d534c
+      internalID: -1924703337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_54
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1826
+        width: 144
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e2fd32013de5de4a8147807b1220db7
+      internalID: -1112932235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_60
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 1819
+        width: 154
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a30ae94f1d542a548888fb4f1a33ec8f
+      internalID: -1497976670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_65
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 1810
+        width: 144
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2f8d91b0b3089044836b610fb1f38f6
+      internalID: 1030427284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_69
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1806
+        width: 158
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02d8ce02d7c26f94a954bd3c2aea277d
+      internalID: 202423781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_71
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 1795
+        width: 144
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f5daf7934bbdbf4cae276d23d94a0d2
+      internalID: -764673317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_72
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 1801
+        width: 139
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d180577528a84d24fad12eb1ba24c26f
+      internalID: -1764466821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_77
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 1870
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95fa48444881a5b42907015eddb6c205
+      internalID: 108642382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_80
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1546
+        width: 142
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cdc52779e9b8dd458481512ef4cfd67
+      internalID: 2023943126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_81
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 1544
+        width: 135
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a27567e164696c4295ffa67877585f1
+      internalID: -1017229853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_83
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 1542
+        width: 136
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11e67cd5c4ef30a43829aa6c619ea412
+      internalID: 1230576464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_85
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 1532
+        width: 145
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d25cb8cd5039e614fa6123591a51b0fe
+      internalID: -1710538122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_86
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 1544
+        width: 155
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c5cbc8ca65902a46b94af70f70a5150
+      internalID: 659153539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_87
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 1546
+        width: 130
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a092f59ccf019df4189ffb4826e0669d
+      internalID: -841817511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_91
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1292
+        width: 143
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a35ee65260252e40a4b655e7370bb0e
+      internalID: 360942956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_96
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 1257
+        width: 145
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37c4002701374864388decb508cd45fc
+      internalID: -506977736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_97
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 1297
+        width: 133
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16621e003da16c646b76e20c7d499edb
+      internalID: -1345850617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_98
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 1292
+        width: 137
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5841b1007bf61cb47b2b55e00024f379
+      internalID: -1804973643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_99
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 1286
+        width: 149
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60d95ef6aa24a77448a6ddf150397bea
+      internalID: -1588071211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_100
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 1275
+        width: 159
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d50855650b9bfe044919e8b862799d7d
+      internalID: -1625824309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_107
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 1001
+        width: 144
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 565cc247d7bcb1543ba9805c1fe1618f
+      internalID: -564980382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_112
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 1008
+        width: 155
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10b7ac1305a6a3e49b181c1806945c68
+      internalID: 1157622880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_113
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 997
+        width: 164
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f948ff89cfa250041b7349ec3972b90a
+      internalID: -1957828871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_115
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 988
+        width: 133
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dae04c4bdacacc4e9c45df7c5ca81b6
+      internalID: -1796095066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_116
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 1011
+        width: 133
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d0087cbf7edd0b48b42458279bdaa5c
+      internalID: -965708261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_117
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 1008
+        width: 139
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4430594d725f714192c488aae6158f9
+      internalID: -1362783237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_123
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 1025
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2acbc472daa7e546b79f4a25e5b9c66
+      internalID: 166551595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_124
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 720
+        width: 148
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db1777e6796cb7f4ab5fbd7833c56ffc
+      internalID: -1506802129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_125
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 250
+        width: 130
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd922b42741bbf44ba2535403a09e4ec
+      internalID: -1757922102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_126
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 250
+        width: 130
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7bd210abeedb2c4ab37d5645cf6973c
+      internalID: -2126329482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_129
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 243
+        width: 156
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aadea5ddca52f784d9f35ba7378e7f18
+      internalID: 83988444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_131
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 258
+        width: 156
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c91627fa50858bf4fb6cd797ac80fd24
+      internalID: -685396184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_132
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 236
+        width: 131
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85b11b8ab124f5b4c87a46b084eebec7
+      internalID: -878009273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_133
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 230
+        width: 131
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fa48880804a9054fa0808c2ca3d8a1e
+      internalID: -1940076133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_134
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 219
+        width: 130
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e9cef9cbcfb79042a227951373179e8
+      internalID: 1331122098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_136
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 11
+        width: 131
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99b836a4b275f384c912c8021b4981ed
+      internalID: 721793843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_137
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 25
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 486a63ec14137064fbd51cc878d63e77
+      internalID: -1557492111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_138
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 23
+        width: 132
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5e096b19f1ceff42946bffc7d5ffb8e
+      internalID: -2016072537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_140
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 6
+        width: 139
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e7c598da024d714fafc88242fea6942
+      internalID: -1303386905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_141
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 8
+        width: 137
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56dec65b13d275c48b765d6e3adae14f
+      internalID: -710497685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_142
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 7
+        width: 139
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e46e1631f6c2c0c44b28c6c3cebe06e3
+      internalID: -1358817967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_143
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 12
+        width: 139
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f463a56505cf40d4998ec0c3a8c3fdc0
+      internalID: -878938020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_144
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 10
+        width: 140
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06226a7f8c2e5a440a9f5f26367e6c8a
+      internalID: 881347819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_145
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 473
+        width: 150
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4487a0937a065347b9a047f5a68a19c
+      internalID: -1908954748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_146
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 480
+        width: 141
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bda5f026af73ef64584273fb4481e8b8
+      internalID: -2064504432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_147
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 473
+        width: 145
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15a2088e43e88354a979e5f34c53ddd6
+      internalID: -1411615737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_148
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 725
+        width: 146
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1d492818fbf03545a4cccd65cb1bfd0
+      internalID: 392525474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_149
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 727
+        width: 161
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8c742e9425dee04ab3bdca74f65a15f
+      internalID: 2010153977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_150
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 746
+        width: 135
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de95d34bc42a83f4792a37fcf4f4805c
+      internalID: -1874451375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_151
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 753
+        width: 73
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ade53e35b09a04346931235e64661586
+      internalID: -2055334159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_152
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 733
+        width: 96
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b33551be54656494298f814b7f694806
+      internalID: -796437737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_153
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 473
+        width: 67
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3619ce111de98f24a80949bc016676ee
+      internalID: 1274439636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_154
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 462
+        width: 37
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baa7d01faf1db0b458440f5cc84d8d49
+      internalID: 880952392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_155
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 467
+        width: 81
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cde05794787a2b40807cdb352d6f534
+      internalID: -227790750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_156
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 480
+        width: 47
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86c0f4d1c4aa2c0408256c88ec0b33f7
+      internalID: 760295146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_157
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 792
+        width: 47
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69a02e0e57e4cae439c3cdf1cef6c334
+      internalID: 691846432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_158
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 681
+        width: 107
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7f979538c4f770429d09af002f14e9d
+      internalID: -1273383451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_159
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 787
+        width: 122
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb9cbd703fb37e6459db6960c52cc924
+      internalID: 1012395304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_160
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 670
+        width: 114
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74b8b49eaa8fa014cb2f03b4962aa5d3
+      internalID: 1363343908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Dark Illusion_161
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 509
+        width: 156
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9d67dbf37b753e43b4f4243b40a514d
+      internalID: -49090122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline:
+    - - {x: 0, y: 1412.5}
+      - {x: -570.5, y: 75.5}
+      - {x: 0.000051535728, y: -1412.5}
+      - {x: 589.5, y: 0.000016843895}
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      PC Computer - Ragnarok Online - Dark Illusion_0: 1824270770
+      PC Computer - Ragnarok Online - Dark Illusion_1: 1635138104
+      PC Computer - Ragnarok Online - Dark Illusion_10: -567166983
+      PC Computer - Ragnarok Online - Dark Illusion_100: -1625824309
+      PC Computer - Ragnarok Online - Dark Illusion_101: 1532600956
+      PC Computer - Ragnarok Online - Dark Illusion_102: -1564287104
+      PC Computer - Ragnarok Online - Dark Illusion_103: 1274663608
+      PC Computer - Ragnarok Online - Dark Illusion_104: -170943989
+      PC Computer - Ragnarok Online - Dark Illusion_105: -144881511
+      PC Computer - Ragnarok Online - Dark Illusion_106: -343747009
+      PC Computer - Ragnarok Online - Dark Illusion_107: -564980382
+      PC Computer - Ragnarok Online - Dark Illusion_108: -801123315
+      PC Computer - Ragnarok Online - Dark Illusion_109: 1277086038
+      PC Computer - Ragnarok Online - Dark Illusion_11: 125889136
+      PC Computer - Ragnarok Online - Dark Illusion_110: 1272787190
+      PC Computer - Ragnarok Online - Dark Illusion_111: -1643712267
+      PC Computer - Ragnarok Online - Dark Illusion_112: 1157622880
+      PC Computer - Ragnarok Online - Dark Illusion_113: -1957828871
+      PC Computer - Ragnarok Online - Dark Illusion_114: 1096394543
+      PC Computer - Ragnarok Online - Dark Illusion_115: -1796095066
+      PC Computer - Ragnarok Online - Dark Illusion_116: -965708261
+      PC Computer - Ragnarok Online - Dark Illusion_117: -1362783237
+      PC Computer - Ragnarok Online - Dark Illusion_118: 172511235
+      PC Computer - Ragnarok Online - Dark Illusion_119: -1660115961
+      PC Computer - Ragnarok Online - Dark Illusion_12: -1414798705
+      PC Computer - Ragnarok Online - Dark Illusion_120: -1295158184
+      PC Computer - Ragnarok Online - Dark Illusion_121: -344713004
+      PC Computer - Ragnarok Online - Dark Illusion_122: 884030728
+      PC Computer - Ragnarok Online - Dark Illusion_123: 166551595
+      PC Computer - Ragnarok Online - Dark Illusion_124: -1506802129
+      PC Computer - Ragnarok Online - Dark Illusion_125: -1757922102
+      PC Computer - Ragnarok Online - Dark Illusion_126: -2126329482
+      PC Computer - Ragnarok Online - Dark Illusion_127: -1283021552
+      PC Computer - Ragnarok Online - Dark Illusion_128: 2099477954
+      PC Computer - Ragnarok Online - Dark Illusion_129: 83988444
+      PC Computer - Ragnarok Online - Dark Illusion_13: 948104796
+      PC Computer - Ragnarok Online - Dark Illusion_130: -130719263
+      PC Computer - Ragnarok Online - Dark Illusion_131: -685396184
+      PC Computer - Ragnarok Online - Dark Illusion_132: -878009273
+      PC Computer - Ragnarok Online - Dark Illusion_133: -1940076133
+      PC Computer - Ragnarok Online - Dark Illusion_134: 1331122098
+      PC Computer - Ragnarok Online - Dark Illusion_135: 1644144573
+      PC Computer - Ragnarok Online - Dark Illusion_136: 721793843
+      PC Computer - Ragnarok Online - Dark Illusion_137: -1557492111
+      PC Computer - Ragnarok Online - Dark Illusion_138: -2016072537
+      PC Computer - Ragnarok Online - Dark Illusion_139: -1981746901
+      PC Computer - Ragnarok Online - Dark Illusion_14: -38291576
+      PC Computer - Ragnarok Online - Dark Illusion_140: -1303386905
+      PC Computer - Ragnarok Online - Dark Illusion_141: -710497685
+      PC Computer - Ragnarok Online - Dark Illusion_142: -1358817967
+      PC Computer - Ragnarok Online - Dark Illusion_143: -878938020
+      PC Computer - Ragnarok Online - Dark Illusion_144: 881347819
+      PC Computer - Ragnarok Online - Dark Illusion_145: -1908954748
+      PC Computer - Ragnarok Online - Dark Illusion_146: -2064504432
+      PC Computer - Ragnarok Online - Dark Illusion_147: -1411615737
+      PC Computer - Ragnarok Online - Dark Illusion_148: 392525474
+      PC Computer - Ragnarok Online - Dark Illusion_149: 2010153977
+      PC Computer - Ragnarok Online - Dark Illusion_15: 1884442532
+      PC Computer - Ragnarok Online - Dark Illusion_150: -1874451375
+      PC Computer - Ragnarok Online - Dark Illusion_151: -2055334159
+      PC Computer - Ragnarok Online - Dark Illusion_152: -796437737
+      PC Computer - Ragnarok Online - Dark Illusion_153: 1274439636
+      PC Computer - Ragnarok Online - Dark Illusion_154: 880952392
+      PC Computer - Ragnarok Online - Dark Illusion_155: -227790750
+      PC Computer - Ragnarok Online - Dark Illusion_156: 760295146
+      PC Computer - Ragnarok Online - Dark Illusion_157: 691846432
+      PC Computer - Ragnarok Online - Dark Illusion_158: -1273383451
+      PC Computer - Ragnarok Online - Dark Illusion_159: 1012395304
+      PC Computer - Ragnarok Online - Dark Illusion_16: -427642626
+      PC Computer - Ragnarok Online - Dark Illusion_160: 1363343908
+      PC Computer - Ragnarok Online - Dark Illusion_161: -49090122
+      PC Computer - Ragnarok Online - Dark Illusion_17: 975291475
+      PC Computer - Ragnarok Online - Dark Illusion_18: -1944750530
+      PC Computer - Ragnarok Online - Dark Illusion_19: -480281849
+      PC Computer - Ragnarok Online - Dark Illusion_2: -442723986
+      PC Computer - Ragnarok Online - Dark Illusion_20: 639956339
+      PC Computer - Ragnarok Online - Dark Illusion_21: -1070722023
+      PC Computer - Ragnarok Online - Dark Illusion_22: -892457616
+      PC Computer - Ragnarok Online - Dark Illusion_23: 12207265
+      PC Computer - Ragnarok Online - Dark Illusion_24: 441375541
+      PC Computer - Ragnarok Online - Dark Illusion_25: -1777916937
+      PC Computer - Ragnarok Online - Dark Illusion_26: -1697635984
+      PC Computer - Ragnarok Online - Dark Illusion_27: 120961777
+      PC Computer - Ragnarok Online - Dark Illusion_28: -33957539
+      PC Computer - Ragnarok Online - Dark Illusion_29: -1386716128
+      PC Computer - Ragnarok Online - Dark Illusion_3: 1401800497
+      PC Computer - Ragnarok Online - Dark Illusion_30: 401713034
+      PC Computer - Ragnarok Online - Dark Illusion_31: -547515331
+      PC Computer - Ragnarok Online - Dark Illusion_32: 1383811943
+      PC Computer - Ragnarok Online - Dark Illusion_33: 41934017
+      PC Computer - Ragnarok Online - Dark Illusion_34: 709476023
+      PC Computer - Ragnarok Online - Dark Illusion_35: -5803820
+      PC Computer - Ragnarok Online - Dark Illusion_36: 1482007416
+      PC Computer - Ragnarok Online - Dark Illusion_37: 2125445248
+      PC Computer - Ragnarok Online - Dark Illusion_38: -174487592
+      PC Computer - Ragnarok Online - Dark Illusion_39: -11665408
+      PC Computer - Ragnarok Online - Dark Illusion_4: -381456355
+      PC Computer - Ragnarok Online - Dark Illusion_40: -1704126111
+      PC Computer - Ragnarok Online - Dark Illusion_41: 1597113895
+      PC Computer - Ragnarok Online - Dark Illusion_42: -2012839372
+      PC Computer - Ragnarok Online - Dark Illusion_43: -1580905610
+      PC Computer - Ragnarok Online - Dark Illusion_44: 561641496
+      PC Computer - Ragnarok Online - Dark Illusion_45: -1351489931
+      PC Computer - Ragnarok Online - Dark Illusion_46: 1376020469
+      PC Computer - Ragnarok Online - Dark Illusion_47: 1056355172
+      PC Computer - Ragnarok Online - Dark Illusion_48: -1801904695
+      PC Computer - Ragnarok Online - Dark Illusion_49: -1924703337
+      PC Computer - Ragnarok Online - Dark Illusion_5: 2004654451
+      PC Computer - Ragnarok Online - Dark Illusion_50: -1049760319
+      PC Computer - Ragnarok Online - Dark Illusion_51: -1751087965
+      PC Computer - Ragnarok Online - Dark Illusion_52: 1888752571
+      PC Computer - Ragnarok Online - Dark Illusion_53: -826865117
+      PC Computer - Ragnarok Online - Dark Illusion_54: -1112932235
+      PC Computer - Ragnarok Online - Dark Illusion_55: 1030436166
+      PC Computer - Ragnarok Online - Dark Illusion_56: 823380353
+      PC Computer - Ragnarok Online - Dark Illusion_57: -1376150211
+      PC Computer - Ragnarok Online - Dark Illusion_58: -1735384135
+      PC Computer - Ragnarok Online - Dark Illusion_59: -1784938433
+      PC Computer - Ragnarok Online - Dark Illusion_6: 1451403842
+      PC Computer - Ragnarok Online - Dark Illusion_60: -1497976670
+      PC Computer - Ragnarok Online - Dark Illusion_61: -1338832991
+      PC Computer - Ragnarok Online - Dark Illusion_62: 29469694
+      PC Computer - Ragnarok Online - Dark Illusion_63: -1398796454
+      PC Computer - Ragnarok Online - Dark Illusion_64: -1654531603
+      PC Computer - Ragnarok Online - Dark Illusion_65: 1030427284
+      PC Computer - Ragnarok Online - Dark Illusion_66: 2013290156
+      PC Computer - Ragnarok Online - Dark Illusion_67: 415733010
+      PC Computer - Ragnarok Online - Dark Illusion_68: 433259926
+      PC Computer - Ragnarok Online - Dark Illusion_69: 202423781
+      PC Computer - Ragnarok Online - Dark Illusion_7: -1997356028
+      PC Computer - Ragnarok Online - Dark Illusion_70: 173899719
+      PC Computer - Ragnarok Online - Dark Illusion_71: -764673317
+      PC Computer - Ragnarok Online - Dark Illusion_72: -1764466821
+      PC Computer - Ragnarok Online - Dark Illusion_73: 1843484630
+      PC Computer - Ragnarok Online - Dark Illusion_74: 2105812239
+      PC Computer - Ragnarok Online - Dark Illusion_75: -2020453895
+      PC Computer - Ragnarok Online - Dark Illusion_76: 531838949
+      PC Computer - Ragnarok Online - Dark Illusion_77: 108642382
+      PC Computer - Ragnarok Online - Dark Illusion_78: -978829196
+      PC Computer - Ragnarok Online - Dark Illusion_79: 1249588554
+      PC Computer - Ragnarok Online - Dark Illusion_8: 643366335
+      PC Computer - Ragnarok Online - Dark Illusion_80: 2023943126
+      PC Computer - Ragnarok Online - Dark Illusion_81: -1017229853
+      PC Computer - Ragnarok Online - Dark Illusion_82: 1924018599
+      PC Computer - Ragnarok Online - Dark Illusion_83: 1230576464
+      PC Computer - Ragnarok Online - Dark Illusion_84: -362503451
+      PC Computer - Ragnarok Online - Dark Illusion_85: -1710538122
+      PC Computer - Ragnarok Online - Dark Illusion_86: 659153539
+      PC Computer - Ragnarok Online - Dark Illusion_87: -841817511
+      PC Computer - Ragnarok Online - Dark Illusion_88: 610980242
+      PC Computer - Ragnarok Online - Dark Illusion_89: 1096051146
+      PC Computer - Ragnarok Online - Dark Illusion_9: 390326616
+      PC Computer - Ragnarok Online - Dark Illusion_90: 1900260570
+      PC Computer - Ragnarok Online - Dark Illusion_91: 360942956
+      PC Computer - Ragnarok Online - Dark Illusion_92: 1205617782
+      PC Computer - Ragnarok Online - Dark Illusion_93: -2042955272
+      PC Computer - Ragnarok Online - Dark Illusion_94: 2051231099
+      PC Computer - Ragnarok Online - Dark Illusion_95: -20861504
+      PC Computer - Ragnarok Online - Dark Illusion_96: -506977736
+      PC Computer - Ragnarok Online - Dark Illusion_97: -1345850617
+      PC Computer - Ragnarok Online - Dark Illusion_98: -1804973643
+      PC Computer - Ragnarok Online - Dark Illusion_99: -1588071211
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
