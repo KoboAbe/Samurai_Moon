@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -65106,7 +65106,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.38, y: 0.38}
+    oldSize: {x: 0.19, y: 0.19}
     newSize: {x: 0.38, y: 0.38}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -65148,10 +65148,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4d2fc32eda1a0749af2f7220b62c88a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 746082452}
-  moveSpeed: 6
-  leftLimit: 44
-  rightLimit: 47
+  speed: 3
+  PlayerGround: {fileID: 0}
 --- !u!212 &746082457
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -69942,7 +69940,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.38, y: 0.38}
+    oldSize: {x: 0.19, y: 0.19}
     newSize: {x: 0.38, y: 0.38}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -69984,10 +69982,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4d2fc32eda1a0749af2f7220b62c88a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1466639116}
-  moveSpeed: 6
-  leftLimit: 11
-  rightLimit: 14
+  speed: 3
+  PlayerGround: {fileID: 0}
 --- !u!212 &1466639121
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -70182,7 +70178,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.38, y: 0.38}
+    oldSize: {x: 0.19, y: 0.19}
     newSize: {x: 0.38, y: 0.38}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -70224,10 +70220,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4d2fc32eda1a0749af2f7220b62c88a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1533392287}
-  moveSpeed: 6
-  leftLimit: 31
-  rightLimit: 35
+  speed: 3
+  PlayerGround: {fileID: 0}
 --- !u!212 &1533392292
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -70707,6 +70701,22 @@ PrefabInstance:
     - target: {fileID: 9189844160630031976, guid: a1fb9cc06bf4ca94c91d43b59ccdbb4f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9189844160630031978, guid: a1fb9cc06bf4ca94c91d43b59ccdbb4f, type: 3}
+      propertyPath: m_Size.x
+      value: 0.12763043
+      objectReference: {fileID: 0}
+    - target: {fileID: 9189844160630031978, guid: a1fb9cc06bf4ca94c91d43b59ccdbb4f, type: 3}
+      propertyPath: m_Size.y
+      value: 0.26934686
+      objectReference: {fileID: 0}
+    - target: {fileID: 9189844160630031978, guid: a1fb9cc06bf4ca94c91d43b59ccdbb4f, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.03064375
+      objectReference: {fileID: 0}
+    - target: {fileID: 9189844160630031978, guid: a1fb9cc06bf4ca94c91d43b59ccdbb4f, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.00048820974
       objectReference: {fileID: 0}
     - target: {fileID: 9189844160630031990, guid: a1fb9cc06bf4ca94c91d43b59ccdbb4f, type: 3}
       propertyPath: m_Name
@@ -71319,7 +71329,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.38, y: 0.38}
+    oldSize: {x: 0.19, y: 0.19}
     newSize: {x: 0.38, y: 0.38}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -71361,10 +71371,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4d2fc32eda1a0749af2f7220b62c88a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 2050454861}
-  moveSpeed: 6
-  leftLimit: 57
-  rightLimit: 59
+  speed: 3
+  PlayerGround: {fileID: 0}
 --- !u!212 &2050454866
 SpriteRenderer:
   m_ObjectHideFlags: 0
