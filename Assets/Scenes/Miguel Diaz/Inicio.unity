@@ -1091,6 +1091,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5958472726554112626, guid: ac2b9c98928b72847b7939c84e88405b, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5958472727037746986, guid: ac2b9c98928b72847b7939c84e88405b, type: 3}
       propertyPath: m_Name
       value: LevelChanger
