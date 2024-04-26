@@ -36,14 +36,17 @@ public class FadeScript : MonoBehaviour
 // ---------------------------------------------------------------------------------------------
     // Funcion para volver al menu inicio
     public void MenuInicio(){
-        SceneManager.LoadScene(0);
+        FadeToLevel(0/* SceneManager.LoadScene(0) */);
     }
 // ------------------------------------------------------------------------------------------------
-    // Funcion para comenzar el juego
+    // Funcion para comenzar el juego e ir a la siguiente escena
     public void StartGame(){
         FadeToLevel(SceneManager.GetActiveScene().buildIndex + 1);
     }
 // ---------------------------------------------------------------------------------------------
+    public void Restart(){
+        FadeToLevel(SceneManager.GetActiveScene().buildIndex);
+    }
 // ---------------------------------------------------------------------------------------------
 // ---------------------------------------------------------------------------------------------
 
