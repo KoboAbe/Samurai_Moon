@@ -11,6 +11,8 @@ public class MoveGolem2 : MonoBehaviour
     [SerializeField] private RangoEnemy rangoVision;
     [SerializeField] private HitEnemy2D hit;
 
+    public Enemy2D damage;
+
     public Animator ani;
 
     public Rigidbody2D rb;
@@ -55,8 +57,8 @@ public class MoveGolem2 : MonoBehaviour
 
 
 
-        RaycastHit2D groundInfo = Physics2D.Raycast(groundController.position, Vector2.down, limit);
-
+        RaycastHit2D groundInfo = Physics2D.Raycast(groundController.position, Vector2.down, limit, LayerMask.NameToLayer("suelo"));
+        Debug.Log(groundInfo.collider.name);
         if (groundInfo == false)
         {
             //Girar
@@ -79,5 +81,15 @@ public class MoveGolem2 : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawLine(groundController.transform.position, groundController.transform.position + Vector3.down * limit);
+    }
+
+    public void StartAttack()
+    {
+        damage.EnabledBox(true);
+    }
+
+    public void EndedAttack()
+    {
+        damage.EnabledBox(false);
     }
 }
