@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/vfx_resources.meta
+guid: 9730d5f1482408b459f6ed802c149bd9
+========
 guid: ac1cf6e14850fcd4c8807fd05fcedb30
+>>>>>>>> Develoment_mergeBranch:Assets/Sprites/Environement/Skybox.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
