@@ -48,6 +48,9 @@ public class FadeScript : MonoBehaviour
         FadeToLevel(SceneManager.GetActiveScene().buildIndex);
     }
 // ---------------------------------------------------------------------------------------------
+    public void IniciarJuego(){
+        SceneManager.LoadScene(0);
+    }
 // ---------------------------------------------------------------------------------------------
 
 }
