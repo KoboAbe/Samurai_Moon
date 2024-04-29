@@ -4,6 +4,7 @@ public class SamuraiController : MonoBehaviour
 {
     private Rigidbody2D rb;
     private Animator anim;
+    private Barravida barravida; // Referencia al script Barravida
     private float movementInputDirection;
     private float movementSpeed = 10.0f;
     public float jumpForce = 16.0f;
@@ -16,6 +17,7 @@ public class SamuraiController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        barravida = FindObjectOfType<Barravida>(); // Busca el objeto con el script Barravida en la escena
     }
 
     void Update()
@@ -138,6 +140,8 @@ public class SamuraiController : MonoBehaviour
         {
             anim.SetTrigger("Damage");
             Debug.Log("Player took damage!");
+            // Actualiza la barra de vida
+            barravida.CambiarVidaActual(vidaActual); // Ajusta esto según cómo obtengas la vida del jugador
         }
     }
 

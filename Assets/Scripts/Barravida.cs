@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,6 +5,21 @@ public class Barravida : MonoBehaviour
 {
     public Slider sliderVida;
     public Slider sliderEnergia;
+
+    // Referencia al SamuraiController
+    public SamuraiController samuraiController;
+
+    void Start()
+    {
+        // Inicializa la barra de vida con la vida máxima del SamuraiController
+        InicializarBarraDeVida(samuraiController.vidaMaxima);
+    }
+
+    void Update()
+    {
+        // Actualiza la barra de vida con la vida actual del SamuraiController
+        CambiarVidaActual(samuraiController.GetVidaActual());
+    }
 
     public void InicializarBarraDeVida(float vidaMaxima)
     {
