@@ -11,6 +11,8 @@ public class MoveGolem2 : MonoBehaviour
     [SerializeField] private RangoEnemy rangoVision;
     [SerializeField] private HitEnemy2D hit;
 
+    public Enemy2D damage;
+
     public Animator ani;
 
     public Rigidbody2D rb;
@@ -79,5 +81,15 @@ public class MoveGolem2 : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawLine(groundController.transform.position, groundController.transform.position + Vector3.down * limit);
+    }
+
+    public void StartAttack()
+    {
+        damage.EnabledBox(true);
+    }
+
+    public void EndedAttack()
+    {
+        damage.EnabledBox(false);
     }
 }

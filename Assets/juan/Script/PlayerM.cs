@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -51,5 +52,10 @@ public class PlayerM : MonoBehaviour
     {
         Vector2 movement = new Vector2(horizontalInput * speed, rb.velocity.y);
         rb.velocity = movement;
+    }
+
+    internal void takeDamage(int v)
+    {
+        Debug.Log($"recibi {v}");
     }
 }
