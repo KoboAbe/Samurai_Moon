@@ -49,7 +49,7 @@ public class FadeScript : MonoBehaviour
     }
 // ---------------------------------------------------------------------------------------------
     public void IniciarJuego(){
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 // ---------------------------------------------------------------------------------------------
 

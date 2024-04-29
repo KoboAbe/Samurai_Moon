@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Miguel Diaz/StartGame.unity
+    guid: b15d8804f1691634992bc81e4921b0ba
+  - enabled: 1
     path: Assets/Scenes/Miguel Diaz/Inicio.unity
     guid: 96086452517e66642a6419f5d163a6ca
   - enabled: 1
