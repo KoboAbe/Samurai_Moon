@@ -4,7 +4,8 @@ public class SamuraiController : MonoBehaviour
 {
     private Rigidbody2D rb;
     private Animator anim;
-    private Barravida barravida; // Referencia al script Barravida
+    public Barravida barravida;
+
     private float movementInputDirection;
     private float movementSpeed = 10.0f;
     public float jumpForce = 16.0f;
@@ -13,11 +14,21 @@ public class SamuraiController : MonoBehaviour
     private bool isGrounded;
     private bool isAlive = true;
 
+    private float tiempoUltimaRecarga;
+
+    // Vida y energía
+    public float vidaMaxima = 100f;
+    public float energiaMaxima = 100f;
+    public float vidaActual;
+    public float energiaActual = 0f;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        barravida = FindObjectOfType<Barravida>(); // Busca el objeto con el script Barravida en la escena
+        barravida = FindObjectOfType<Barravida>();
+        barravida.InicializarBarraDeVida(vidaMaxima);
+        barravida.InicializarBarraDeEnergia(energiaMaxima);
     }
 
     void Update()
@@ -27,6 +38,7 @@ public class SamuraiController : MonoBehaviour
             CheckInput();
             CheckMovementDirection();
             UpdateAnimations();
+            IncrementarEnergiaEnIntervalos();
         }
     }
 
@@ -104,7 +116,7 @@ public class SamuraiController : MonoBehaviour
         else if (collision.gameObject.CompareTag("Enemy"))
         {
             Debug.Log("Player collided with an enemy: " + collision.gameObject.name);
-            TakeDamage(); // Aplica daño al jugador al chocar con un enemigo
+            TakeDamage(10f);
         }
     }
 
@@ -122,7 +134,7 @@ public class SamuraiController : MonoBehaviour
         {
             Debug.Log("Fire Collected: " + fireObject.name);
             Destroy(fireObject);
-            // Aquí puedes agregar más lógica si es necesario
+            barravida.RecargarEnergia(10f);
         }
     }
 
@@ -134,15 +146,41 @@ public class SamuraiController : MonoBehaviour
         }
     }
 
-    public void TakeDamage()
+    public void TakeDamage(float damageAmount)
     {
         if (isAlive)
         {
             anim.SetTrigger("Damage");
             Debug.Log("Player took damage!");
-            // Actualiza la barra de vida
-            barravida.CambiarVidaActual(vidaActual); // Ajusta esto según cómo obtengas la vida del jugador
+            vidaActual -= damageAmount;
+            barravida.CambiarVidaActual(vidaActual);
+            barravida.TakeDamage(damageAmount);
         }
+    }
+
+    private void IncrementarEnergiaEnIntervalos()
+    {
+        // Verificar si ha pasado suficiente tiempo desde la última recarga
+        if (Time.time - tiempoUltimaRecarga >= 10f)
+        {
+            IncrementarEnergia(10f); // Incrementar la energía en intervalos de 10
+            tiempoUltimaRecarga = Time.time; // Actualizar el tiempo de la última recarga
+        }
+    }
+
+    private void IncrementarEnergia(float cantidad)
+    {
+        // Si la energía actual más la cantidad no excede el máximo, incrementarla
+        if (energiaActual + cantidad < energiaMaxima)
+        {
+            energiaActual += cantidad;
+        }
+        else
+        {
+            energiaActual = energiaMaxima;
+        }
+
+        barravida.CambiarEnergiaActual(energiaActual);
     }
 
     public void Die()
