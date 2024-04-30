@@ -9,7 +9,9 @@ public class MoveGolem2 : MonoBehaviour
     [SerializeField] private bool moveRight;
     [SerializeField] private Transform groundController;
     [SerializeField] private RangoEnemy rangoVision;
+    [SerializeField] private RangoEnemy rangoVisionBack;
     [SerializeField] private HitEnemy2D hit;
+    public SamuraiController samurai;
 
     public Enemy2D damage;
 
@@ -20,6 +22,8 @@ public class MoveGolem2 : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         ani = GetComponent<Animator>();
+        samurai=GameObject.FindFirstObjectByType<SamuraiController>();
+
     }
 
     private void FixedUpdate()
@@ -65,9 +69,12 @@ public class MoveGolem2 : MonoBehaviour
             Girar();
 
         }
+        if (rangoVisionBack.visto)
+        {
+            Girar();
+        }
 
-
-
+        DistaceFromPlayer();
     }
 
     private void Girar()
@@ -91,5 +98,11 @@ public class MoveGolem2 : MonoBehaviour
     public void EndedAttack()
     {
         damage.EnabledBox(false);
+    }
+
+    public void DistaceFromPlayer()
+    {
+        var distance = Vector2.Distance(gameObject.transform.position, samurai.gameObject.transform.position);
+       // Debug.Log(distance);
     }
 }

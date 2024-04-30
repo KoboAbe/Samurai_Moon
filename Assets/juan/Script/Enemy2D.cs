@@ -126,7 +126,7 @@ public class Enemy2D : MonoBehaviour
     {
         if (collision.CompareTag("PJ"))
         {
-            collision.gameObject.GetComponent<PlayerM>().takeDamage(1);
+            collision.gameObject.GetComponent<LifeController>().TakeDamage(10);
         }
     }
 

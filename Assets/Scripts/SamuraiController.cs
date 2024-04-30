@@ -146,7 +146,7 @@ public class SamuraiController : MonoBehaviour
         if (isAlive)
         {
             isAlive = false;
-            anim.SetTrigger("Death");
+            anim.SetTrigger("isDead");
             Debug.Log("Player has died.");
             // Aquí puedes agregar más lógica si es necesario al morir el jugador
         }
