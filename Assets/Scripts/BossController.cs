@@ -1,52 +1,57 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BossController : MonoBehaviour
 {
-    private Animator animator;
+    public Animator animator;
     public Rigidbody2D rb2D;
     public Transform jugador;
-    private bool mirandoDerecha = true;
+    public bool mirandoDerecha = true;
+    private int toques = 0; // Contador de toques recibidos
 
     [Header("Vida")]
     [SerializeField] private float vida;
-
-    //[SerializeField] private BarraDeVida barraDeVida;
 
     [Header("Ataque")]
     [SerializeField] private Transform controladorAtaque;
     [SerializeField] private float radioAtaque;
     [SerializeField] private float dañoAtaque;
 
+    [Header("Persecución")]
+    [SerializeField] private float velocidadPersecucion = 5f; // Velocidad de persecución del jefe
 
     private void Start()
     {
         animator = GetComponent<Animator>();
         rb2D = GetComponent<Rigidbody2D>();
-        //barraDeVida.InicializarBarraDeVida(vida);
-        jugador = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+
+        // Buscar el jugador solo una vez al inicio
+        jugador = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
-    private void Update()
+    public void Update()
     {
-        float distanciaJugador = Vector2.Distance(transform.position, jugador.position);
-        animator.SetFloat("distanciaJugador", distanciaJugador);
+        // Mira al jugador solo si hay un jugador y el script no está desactivado
+        if (jugador != null && enabled)
+        {
+            MirarJugador();
+
+            // Perseguir al jugador
+            Vector2 direccion = (jugador.position - transform.position).normalized;
+            rb2D.MovePosition(rb2D.position + direccion * velocidadPersecucion * Time.deltaTime);
+        }
     }
 
     public void TomarDaño(float daño)
     {
         vida -= daño;
 
-        //barraDeVida.CambiarVidaActual(vida);
-
         if (vida <= 0)
         {
-            animator.SetTrigger("Death");
+            Morir();
         }
     }
 
-    private void Muerte()
+    private void Morir()
     {
         Destroy(gameObject);
     }
@@ -73,7 +78,22 @@ public class BossController : MonoBehaviour
         }
     }
 
-    private void OnDrawGizmos()
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            // Incrementa el contador de toques
+            toques++;
+
+            // Si el contador alcanza 3, destruye el enemigo
+            if (toques >= 3)
+            {
+                Morir();
+            }
+        }
+    }
+
+    private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(controladorAtaque.position, radioAtaque);

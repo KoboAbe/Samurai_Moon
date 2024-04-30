@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/ScenePrototipo.unity.meta
+guid: d4dda27a6447b1042b7f102895c79106
+========
 guid: 15f77b46e3e0ef4429c82c22159a7bbb
+>>>>>>>> Develoment_mergeBranch:Assets/Scenes/Escenas Finales/Nivel1.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
