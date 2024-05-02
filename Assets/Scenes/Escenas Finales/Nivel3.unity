@@ -174,9 +174,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3448954144455822720, guid: 46f7aa1efab29a24aaf778fc34c5943b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -159.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 3448954144455822720, guid: 46f7aa1efab29a24aaf778fc34c5943b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -308.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 3448954144899155781, guid: 46f7aa1efab29a24aaf778fc34c5943b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -159.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 3448954144899155781, guid: 46f7aa1efab29a24aaf778fc34c5943b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -308.61
+      objectReference: {fileID: 0}
     - target: {fileID: 7137158991014113555, guid: 46f7aa1efab29a24aaf778fc34c5943b, type: 3}
       propertyPath: m_Name
       value: Moon Level3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7578150713831114379, guid: 46f7aa1efab29a24aaf778fc34c5943b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -159.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 7578150713831114379, guid: 46f7aa1efab29a24aaf778fc34c5943b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -308.61
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46f7aa1efab29a24aaf778fc34c5943b, type: 3}
