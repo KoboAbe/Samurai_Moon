@@ -24,7 +24,7 @@ public class LifeController : MonoBehaviour
             sami.Die();
             return;
         }
-        sami.TakeDamage();
+        sami.TakeDamage(10);
     }
 
 
