@@ -780,6 +780,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d184f6faffc1c5c4e9e3312ffb49a98e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioS: {fileID: 0}
 --- !u!4 &977196789
 Transform:
   m_ObjectHideFlags: 0
@@ -793,7 +794,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &977196790
 AudioSource:
@@ -805,9 +806,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e4f155cd072f183468c90b84d920fd50, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 952ab264102925942987e1bf23a2c43c, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.825
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1091,17 +1092,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5958472726554112626, guid: ac2b9c98928b72847b7939c84e88405b, type: 3}
-      propertyPath: m_UiScaleMode
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5958472727037746986, guid: ac2b9c98928b72847b7939c84e88405b, type: 3}
       propertyPath: m_Name
       value: LevelChanger
       objectReference: {fileID: 0}
     - target: {fileID: 5958472727037746987, guid: ac2b9c98928b72847b7939c84e88405b, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5958472727037746987, guid: ac2b9c98928b72847b7939c84e88405b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1329,6 +1326,7 @@ GameObject:
   - component: {fileID: 1969430187}
   - component: {fileID: 1969430186}
   - component: {fileID: 1969430185}
+  - component: {fileID: 1969430189}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1402,6 +1400,39 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1969430189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1969430184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
 --- !u!1 &2040313731
 GameObject:
   m_ObjectHideFlags: 0
