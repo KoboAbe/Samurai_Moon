@@ -7,7 +7,6 @@ public class LifeController : MonoBehaviour
 {
     public float vidaMax;
     public SamuraiController sami;
-
     public Slider sliderVida;
 
     private void Start()

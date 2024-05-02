@@ -7,7 +7,7 @@ public class SamuraiController : MonoBehaviour
     public Barravida barravida;
 
     private float movementInputDirection;
-    private float movementSpeed = 10.0f;
+    public float movementSpeed = 10.0f;
     public float jumpForce = 16.0f;
     private bool isFacingRight = true;
     private bool isRunning;
@@ -42,6 +42,9 @@ public class SamuraiController : MonoBehaviour
             UpdateAnimations();
             IncrementarEnergiaEnIntervalos();
         }
+
+        UpdateAnimations();
+        FlipSprite();
     }
 
     void FixedUpdate()
@@ -73,7 +76,7 @@ public class SamuraiController : MonoBehaviour
     {
         movementInputDirection = Input.GetAxisRaw("Horizontal");
 
-        if (Input.GetButtonDown("Jump") && isGrounded)
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             Jump();
         }
@@ -102,6 +105,17 @@ public class SamuraiController : MonoBehaviour
         Vector3 scale = transform.localScale;
         scale.x *= -1;
         transform.localScale = scale;
+    }
+
+    void FlipSprite()
+    {
+        if ((movementInputDirection < 0f && isFacingRight) || (movementInputDirection > 0f && !isFacingRight))
+        {
+            isFacingRight = !isFacingRight;
+            Vector3 scale = transform.localScale;
+            scale.x *= -1;
+            transform.localScale = scale;
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
