@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy2D : MonoBehaviour
+public class Player2D : MonoBehaviour
 {
-
     public string tagTarget;
     public int countDamage;
 
@@ -127,7 +126,7 @@ public class Enemy2D : MonoBehaviour
     {
         if (collision.CompareTag(tagTarget))
         {
-            collision.gameObject.GetComponent<LifeController>().TakeDamage(countDamage);
+            collision.gameObject.GetComponent<LifeEnemy>().TakeDamage(countDamage);
         }
     }
 
@@ -141,11 +140,8 @@ public class Enemy2D : MonoBehaviour
 
     public void EnabledBox(bool isActived)
     {
-        boxAttack.enabled=isActived;
+        boxAttack.enabled = isActived;
     }
 
-    public void EnableBox() { EnabledBox(true); }
-
-    public void DisableBox() { EnabledBox(false); }
-
+ 
 }

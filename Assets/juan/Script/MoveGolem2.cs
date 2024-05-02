@@ -11,6 +11,11 @@ public class MoveGolem2 : MonoBehaviour
     [SerializeField] private RangoEnemy rangoVision;
     [SerializeField] private RangoEnemy rangoVisionBack;
     [SerializeField] private HitEnemy2D hit;
+    public LifeEnemy isAlive;
+    public float vidaActual;
+
+
+
     public SamuraiController samurai;
 
     public Enemy2D damage;
@@ -28,53 +33,62 @@ public class MoveGolem2 : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!rangoVision.visto) 
+
+        if (isAlive.isAlive = true)
         {
 
-    
-            rb.velocity = new Vector2(speed, rb.velocity.y);
-            ani.SetBool("walk", true);
-            ani.SetBool("run", false);
-            ani.SetBool("attack", false);
+            if (!rangoVision.visto)
+            {
 
-        }else if (rangoVision.visto)
-        {
-            rb.velocity = new Vector2(speedRun, rb.velocity.y);
-            ani.SetBool("walk", false);
-            ani.SetBool("run", true);
-            ani.SetBool("attack", false);
 
+                rb.velocity = new Vector2(speed, rb.velocity.y);
+                ani.SetBool("walk", true);
+                ani.SetBool("run", false);
+                ani.SetBool("attack", false);
+
+            }
+            else if (rangoVision.visto)
+            {
+                rb.velocity = new Vector2(speedRun, rb.velocity.y);
+                ani.SetBool("walk", false);
+                ani.SetBool("run", true);
+                ani.SetBool("attack", false);
+
+            }
+
+            if (hit.hit)
+            {
+                rb.velocity = new Vector2(0, rb.velocity.y);
+                ani.SetBool("walk", false);
+                ani.SetBool("run", false);
+                ani.SetBool("attack", true);
+            }
+            else
+            {
+                ani.SetBool("attack", false);
+            }
+
+
+
+
+            RaycastHit2D groundInfo = Physics2D.Raycast(groundController.position, Vector2.down, limit);
+
+            if (groundInfo == false)
+            {
+                //Girar
+                Girar();
+
+            }
+            if (rangoVisionBack.visto)
+            {
+                Girar();
+            }
+
+            DistaceFromPlayer();
+
+          
         }
-        
-       if (hit.hit)
-        {
-            rb.velocity = new Vector2(0, rb.velocity.y);
-            ani.SetBool("walk", false);
-            ani.SetBool("run", false);
-            ani.SetBool("attack", true);
-        }
-        else
-        {
-            ani.SetBool("attack", false);
-        }
-
-
-
-
-        RaycastHit2D groundInfo = Physics2D.Raycast(groundController.position, Vector2.down, limit);
-
-        if (groundInfo == false)
-        {
-            //Girar
-            Girar();
-
-        }
-        if (rangoVisionBack.visto)
-        {
-            Girar();
-        }
-
-        DistaceFromPlayer();
+     
     }
 
     private void Girar()
@@ -104,5 +118,25 @@ public class MoveGolem2 : MonoBehaviour
     {
         var distance = Vector2.Distance(gameObject.transform.position, samurai.gameObject.transform.position);
        // Debug.Log(distance);
+    }
+
+    public void TakeDamage(float damageAmount)
+    {
+      
+            ani.SetTrigger("Damage");
+            Debug.Log("Player took damage!");
+            
+            //barravida.CambiarVidaActual(vidaActual);
+            // barravida.TakeDamage(damageAmount);
+        
+    }
+
+    public void Die()
+    {
+       
+            ani.SetTrigger("isDead");
+            Debug.Log("Player has died.");
+            // Aquí puedes agregar más lógica si es necesario al morir el jugador
+     
     }
 }
