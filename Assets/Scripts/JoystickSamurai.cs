@@ -12,6 +12,7 @@ public class JoystickSamurai : MonoBehaviour
     private Animator animator; // Referencia al componente Animator
     private SpriteRenderer spriteRenderer; // Referencia al componente SpriteRenderer
     private bool isGrounded; // Variable para verificar si el jugador está en el suelo
+    
 
     private void Start()
     {
@@ -52,6 +53,7 @@ public class JoystickSamurai : MonoBehaviour
             Debug.Log("Jumping!");
             animator.SetTrigger("isJumping"); // Activar el trigger de la animación de salto
             rigidbody.velocity = new Vector2(rigidbody.velocity.x, jumpForce);
+            isGrounded = false;
         }
     }
 

@@ -7,6 +7,7 @@ public class PauseMenu : MonoBehaviour
 {
     public static bool gameIsPaused = false;
     public GameObject pauseMenuUi;
+    public GameObject fixedJoystick;
 
 
     public void Pause()
@@ -21,6 +22,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUi.SetActive(false);
         Time.timeScale = 1f;
         gameIsPaused = false;
+        fixedJoystick.SetActive(true);
     }
 
     public void Restart()
