@@ -2262,6 +2262,10 @@ PrefabInstance:
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 272235544955746937, guid: 2c155cef7a2e2a8488f9a321308012c3, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 272235544955746939, guid: 2c155cef7a2e2a8488f9a321308012c3, type: 3}
       propertyPath: m_IsActive
       value: 1
