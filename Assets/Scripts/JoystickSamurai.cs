@@ -12,7 +12,10 @@ public class JoystickSamurai : MonoBehaviour
     private Animator animator; // Referencia al componente Animator
     private SpriteRenderer spriteRenderer; // Referencia al componente SpriteRenderer
     private bool isGrounded; // Variable para verificar si el jugador está en el suelo
-    
+    private bool isAlive = true; 
+    public float vidaActual;
+
+    public Player2D boxDamage;  
 
     private void Start()
     {
@@ -26,18 +29,22 @@ public class JoystickSamurai : MonoBehaviour
 
     private void FixedUpdate()
     {
-        float xVal = fixedJoystick.Horizontal;
-        float yVal = fixedJoystick.Vertical;
+        if (isAlive)
+        {
+            float xVal = fixedJoystick.Horizontal;
+            float yVal = fixedJoystick.Vertical;
 
-        Vector2 movement = new Vector2(xVal, yVal);
-        rigidbody.velocity = new Vector2(movement.x * speed, rigidbody.velocity.y);
+            Vector2 movement = new Vector2(xVal, yVal);
+            rigidbody.velocity = new Vector2(movement.x * speed, rigidbody.velocity.y);
 
-        // Configurar los parámetros de animación
-        animator.SetFloat("yVelocity", rigidbody.velocity.y); // Establecer la velocidad vertical
-        animator.SetBool("isRunning", movement.magnitude > 0); // Establecer si el jugador está corriendo
+            // Configurar los parámetros de animación
+            animator.SetFloat("yVelocity", rigidbody.velocity.y); // Establecer la velocidad vertical
+            animator.SetBool("isRunning", movement.magnitude > 0); // Establecer si el jugador está corriendo
 
-        // Voltear el sprite según la dirección horizontal
-        FlipSprite(xVal);
+            // Voltear el sprite según la dirección horizontal
+            FlipSprite(xVal);
+        }
+        
     }
 
     private void Attack()
@@ -46,7 +53,7 @@ public class JoystickSamurai : MonoBehaviour
         animator.SetTrigger("isAttacking"); // Activar el trigger de la animación de ataque
     }
 
-    private void Jump()
+    public void Jump()
     {
         if (isGrounded) // Verificar si el jugador está en el suelo antes de saltar
         {
@@ -98,4 +105,31 @@ public class JoystickSamurai : MonoBehaviour
             //TakeDamage(10f);
         }
     }
+
+    public void TakeDamage(float damageAmount)
+    {
+        if (isAlive)
+        {
+            animator.SetTrigger("Damage");
+            Debug.Log("Player took damage!");
+            vidaActual -= damageAmount;
+            //barravida.CambiarVidaActual(vidaActual);
+           // barravida.TakeDamage(damageAmount);
+        }
+    }
+    public void Die()
+    {
+        if (isAlive)
+        {
+            isAlive = false;
+            animator.SetTrigger("isDead");
+            Debug.Log("Player has died.");
+            // Aquí puedes agregar más lógica si es necesario al morir el jugador
+        }
+    }
+
+    public void EnableBox() { boxDamage.EnabledBox(true); }
+
+    public void DisableBox() { boxDamage.EnabledBox(false); }
+
 }

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class LifeController : MonoBehaviour
 {
     public float vidaMax;
-    public SamuraiController sami;
+    public JoystickSamurai saiten;
     public Slider sliderVida;
 
     private void Start()
@@ -20,10 +20,10 @@ public class LifeController : MonoBehaviour
         sliderVida.value -= damagePoint;
         if(sliderVida.value <=0)
         {
-            sami.Die();
+            saiten.Die();
             return;
         }
-        sami.TakeDamage(10);
+        saiten.TakeDamage(10);
     }
 
 
