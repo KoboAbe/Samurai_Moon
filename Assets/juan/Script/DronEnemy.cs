@@ -19,7 +19,7 @@ public class DronEnemy : MonoBehaviour
     private float coldDown;
 
 
-    public SamuraiController samurai;
+    public JoystickSamurai samurai;
 
     public Enemy2D damage;
 
@@ -30,7 +30,7 @@ public class DronEnemy : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         ani = GetComponent<Animator>();
-        samurai = GameObject.FindFirstObjectByType<SamuraiController>();
+        samurai = GameObject.FindFirstObjectByType<JoystickSamurai>();
 
     }
 
@@ -44,20 +44,20 @@ public class DronEnemy : MonoBehaviour
 
 
             rb.velocity = new Vector2(speed, rb.velocity.y);
-            ani.SetBool("walk", true);
-            ani.SetBool("run", false);
+            ani.SetBool("fly", true);
+            ani.SetBool("fly", false);
             ani.SetBool("attack", false);
 
         }
         else if (rangoVision.visto)
         {
             rb.velocity = new Vector2(speedRun, rb.velocity.y);
-            ani.SetBool("walk", false);
-            ani.SetBool("run", true);
+            ani.SetBool("fly", false);
+            ani.SetBool("fly", true);
             ani.SetBool("attack", false);
 
             coldDown += Time.fixedDeltaTime;
-            if (coldDown > 1)
+            if (coldDown > 2)
             {
                 Debug.Log(coldDown);
                 coldDown = 0;
@@ -69,8 +69,8 @@ public class DronEnemy : MonoBehaviour
         if (hit.hit)
         {
             rb.velocity = new Vector2(0, rb.velocity.y);
-            ani.SetBool("walk", false);
-            ani.SetBool("run", false);
+            ani.SetBool("fly", false);
+            ani.SetBool("fly", false);
             ani.SetBool("attack", true);
         }
         else
@@ -94,7 +94,7 @@ public class DronEnemy : MonoBehaviour
             Girar();
         }
 
-        DistaceFromPlayer();
+       
     }
 
     private void GunShoot()
@@ -125,9 +125,4 @@ public class DronEnemy : MonoBehaviour
         damage.EnabledBox(false);
     }
 
-    public void DistaceFromPlayer()
-    {
-        var distance = Vector2.Distance(gameObject.transform.position, samurai.gameObject.transform.position);
-        // Debug.Log(distance);
-    }
 }
