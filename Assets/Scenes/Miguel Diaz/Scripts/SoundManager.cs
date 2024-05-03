@@ -9,17 +9,19 @@ public class SoundManager : MonoBehaviour
     [SerializeField] AudioSource musicSource;
     [SerializeField] AudioSource sfxSource;
 
-    [Header ("----------------- Audio Clips -----------------")]
+    [Header ("----------------- Audio Clips Samurai -----------------")]
     public AudioClip music;
     public AudioClip jump;
     public AudioClip run;
     public AudioClip sword;
+    
+    [Header ("----------------- Audio Clips Golem-----------------")]
     public AudioClip golem;
     public AudioClip golem_hit;
 
 //------------------------------------------------------------------------------------------------------
     void Start(){
-/*         musicSource.clip = music;
+/*      musicSource.clip = music;
         musicSource.Play(); */
     }
 
