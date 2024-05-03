@@ -18,8 +18,9 @@ public class SoundManager : MonoBehaviour
     [Header ("----------------- Audio Clips Golem-----------------")]
     public AudioClip golem;
     public AudioClip golem_hit;
+    public AudioClip shoot;
 
-//------------------------------------------------------------------------------------------------------
+ //------------------------------------------------------------------------------------------------------
     void Start(){
 /*      musicSource.clip = music;
         musicSource.Play(); */

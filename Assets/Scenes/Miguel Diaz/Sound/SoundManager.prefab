@@ -54,6 +54,7 @@ MonoBehaviour:
   sword: {fileID: 8300000, guid: 45fe2700c100a7d40afb751e926bfeaa, type: 3}
   golem: {fileID: 8300000, guid: 1efaacbd7f8b2974e928c2c3acbb0cba, type: 3}
   golem_hit: {fileID: 8300000, guid: 1031ae70c4f274c44928cfd9f207aa8f, type: 3}
+  shoot: {fileID: 8300000, guid: a641c34cc8d8ff24a8d560747c2dda02, type: 3}
 --- !u!1 &9061613522596569713
 GameObject:
   m_ObjectHideFlags: 0

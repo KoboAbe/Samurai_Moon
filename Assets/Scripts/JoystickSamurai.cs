@@ -15,6 +15,8 @@ public class JoystickSamurai : MonoBehaviour
     private bool isGrounded; // Variable para verificar si el jugador está en el suelo
     private bool isAlive = true; 
     public float vidaActual;
+    float delay = 3f;
+    
 // ----------------------------------------------------------------
     public SoundManager soundManager;
 // ----------------------------------------------------------------
@@ -115,9 +117,9 @@ public class JoystickSamurai : MonoBehaviour
             isGrounded = true;
             Debug.Log("Player is grounded");
         }
-        else if (collision.gameObject.CompareTag("Fire"))
+        else if (collision.gameObject.CompareTag("Death"))
         {
-            //CollectFire(collision.gameObject);
+            Die();
         }
         else if (collision.gameObject.CompareTag("Enemy"))
         {
@@ -137,6 +139,7 @@ public class JoystickSamurai : MonoBehaviour
            // barravida.TakeDamage(damageAmount);
         }
     }
+
     public void Die()
     {
         if (isAlive)
@@ -144,12 +147,24 @@ public class JoystickSamurai : MonoBehaviour
             isAlive = false;
             animator.SetTrigger("isDead");
             Debug.Log("Player has died.");
-            gameOverUI.SetActive(true);
-            Time.timeScale = 0f;
-
+            GameOver();
             // Aquí puedes agregar más lógica si es necesario al morir el jugador
         }
     }
+
+    public void GameOver()
+    {
+        // Esperar antes de mostrar el panel de Game Over
+        Invoke("ShowGameOverUI", delay);
+    }
+
+    void ShowGameOverUI()
+    {
+        gameOverUI.SetActive(true); // Mostrar el panel de Game Over
+        // Time.timeScale = 0f; // Pausar el tiempo en el juego
+    }
+
+
 
     public void EnableBox() { boxDamage.EnabledBox(true); }
 

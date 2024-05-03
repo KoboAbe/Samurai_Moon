@@ -12,6 +12,8 @@ public class DronEnemy : MonoBehaviour
     [SerializeField] private RangoEnemy rangoVision;
     [SerializeField] private RangoEnemy rangoVisionBack;
     [SerializeField] private HitEnemy2D hit;
+
+    public SoundManager soundManager;
    
 
     public GameObject bullet;
@@ -28,6 +30,7 @@ public class DronEnemy : MonoBehaviour
     public Rigidbody2D rb;
     void Start()
     {
+        soundManager = FindObjectOfType<SoundManager>();
         rb = GetComponent<Rigidbody2D>();
         ani = GetComponent<Animator>();
         samurai = GameObject.FindFirstObjectByType<JoystickSamurai>();
@@ -100,6 +103,7 @@ public class DronEnemy : MonoBehaviour
     private void GunShoot()
     {
         Instantiate(bullet, bulletPos.position, Quaternion.identity);
+        soundManager.PlaySFX(soundManager.shoot);
     }
 
     private void Girar()

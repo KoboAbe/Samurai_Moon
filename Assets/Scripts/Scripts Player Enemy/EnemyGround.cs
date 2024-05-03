@@ -14,6 +14,8 @@ public class EnemyGround : MonoBehaviour
     public LifeEnemy2 isAlive;
     public float vidaActual;
 
+    public SoundManager soundManager;
+
 
 
     public SamuraiController samurai;
@@ -25,6 +27,7 @@ public class EnemyGround : MonoBehaviour
     public Rigidbody2D rb;
     void Start()
     {
+        soundManager = FindObjectOfType<SoundManager>();
         rb = GetComponent<Rigidbody2D>();
         ani = GetComponent<Animator>();
         samurai = GameObject.FindFirstObjectByType<SamuraiController>();
@@ -105,6 +108,7 @@ public class EnemyGround : MonoBehaviour
 
     public void StartAttack()
     {
+        soundManager.PlaySFX(soundManager.golem_hit);
         damage.EnabledBox(true);
     }
 
@@ -134,7 +138,7 @@ public class EnemyGround : MonoBehaviour
 
         ani.SetTrigger("isDead");
         Debug.Log("Enemy has died.");
-        // Aquí puedes agregar más lógica si es necesario al morir el jugador
+        // Aquï¿½ puedes agregar mï¿½s lï¿½gica si es necesario al morir el jugador
 
     }
 }

@@ -9,6 +9,7 @@ TagManager:
   - Fire
   - PJ
   - Hit
+  - Death
   layers:
   - Default
   - TransparentFX
