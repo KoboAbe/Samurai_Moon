@@ -15,6 +15,9 @@ public class JoystickSamurai : MonoBehaviour
     private bool isGrounded; // Variable para verificar si el jugador está en el suelo
     private bool isAlive = true; 
     public float vidaActual;
+// ----------------------------------------------------------------
+    public SoundManager soundManager;
+// ----------------------------------------------------------------
 
     public GameObject gameOverUI;
 
@@ -28,6 +31,10 @@ public class JoystickSamurai : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>(); // Obtener el componente SpriteRenderer del mismo objeto
         attackButton.onClick.AddListener(Attack);
         jumpButton.onClick.AddListener(Jump); // Agregar un listener para el botón de salto
+
+        // ----------------------------------------------------------------
+        soundManager = FindObjectOfType<SoundManager>();
+        // ----------------------------------------------------------------
     }
 
     private void FixedUpdate()
@@ -52,18 +59,28 @@ public class JoystickSamurai : MonoBehaviour
 
     private void Attack()
     {
+        if (isAlive){
         Debug.Log("Attacking!");
         animator.SetTrigger("isAttacking"); // Activar el trigger de la animación de ataque
+        // ----------------------------------------------------------------
+        soundManager.PlaySFX(soundManager.sword);
+        // ----------------------------------------------------------------
+        }
+
     }
 
     public void Jump()
     {
-        if (isGrounded) // Verificar si el jugador está en el suelo antes de saltar
+        if (isGrounded && isAlive) // Verificar si el jugador está en el suelo antes de saltar
         {
             Debug.Log("Jumping!");
             animator.SetTrigger("isJumping"); // Activar el trigger de la animación de salto
             rigidbody.velocity = new Vector2(rigidbody.velocity.x, jumpForce);
             isGrounded = false;
+
+            // ----------------------------------------------------------------
+            soundManager.PlaySFX(soundManager.jump);
+            // ----------------------------------------------------------------
         }
     }
 
