@@ -5,7 +5,8 @@ using UnityEngine;
 public class Enemy2D : MonoBehaviour
 {
 
-
+    public string tagTarget;
+    public int countDamage;
 
     //logica del daño al player
     public BoxCollider2D boxAttack;
@@ -124,15 +125,15 @@ public class Enemy2D : MonoBehaviour
         }*/
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("PJ"))
+        if (collision.CompareTag(tagTarget))
         {
-            collision.gameObject.GetComponent<LifeController>().TakeDamage(10);
+            collision.gameObject.GetComponent<LifeController>().TakeDamage(countDamage);
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("PJ"))
+        if (collision.CompareTag(tagTarget))
         {
 
         }
@@ -142,5 +143,9 @@ public class Enemy2D : MonoBehaviour
     {
         boxAttack.enabled=isActived;
     }
+
+    public void EnableBox() { EnabledBox(true); }
+
+    public void DisableBox() { EnabledBox(false); }
 
 }

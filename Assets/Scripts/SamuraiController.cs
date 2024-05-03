@@ -7,7 +7,7 @@ public class SamuraiController : MonoBehaviour
     public Barravida barravida;
 
     private float movementInputDirection;
-    private float movementSpeed = 10.0f;
+    public float movementSpeed = 10.0f;
     public float jumpForce = 16.0f;
     private bool isFacingRight = true;
     private bool isRunning;
@@ -22,13 +22,15 @@ public class SamuraiController : MonoBehaviour
     public float vidaActual;
     public float energiaActual = 0f;
 
+    public Player2D boxDamage;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        barravida = FindObjectOfType<Barravida>();
-        barravida.InicializarBarraDeVida(vidaMaxima);
-        barravida.InicializarBarraDeEnergia(energiaMaxima);
+        //barravida = FindObjectOfType<Barravida>();
+        //barravida.InicializarBarraDeVida(vidaMaxima);
+        //barravida.InicializarBarraDeEnergia(energiaMaxima);
     }
 
     void Update()
@@ -40,6 +42,9 @@ public class SamuraiController : MonoBehaviour
             UpdateAnimations();
             IncrementarEnergiaEnIntervalos();
         }
+
+        UpdateAnimations();
+        FlipSprite();
     }
 
     void FixedUpdate()
@@ -71,7 +76,7 @@ public class SamuraiController : MonoBehaviour
     {
         movementInputDirection = Input.GetAxisRaw("Horizontal");
 
-        if (Input.GetButtonDown("Jump") && isGrounded)
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             Jump();
         }
@@ -100,6 +105,17 @@ public class SamuraiController : MonoBehaviour
         Vector3 scale = transform.localScale;
         scale.x *= -1;
         transform.localScale = scale;
+    }
+
+    void FlipSprite()
+    {
+        if ((movementInputDirection < 0f && isFacingRight) || (movementInputDirection > 0f && !isFacingRight))
+        {
+            isFacingRight = !isFacingRight;
+            Vector3 scale = transform.localScale;
+            scale.x *= -1;
+            transform.localScale = scale;
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -134,7 +150,7 @@ public class SamuraiController : MonoBehaviour
         {
             Debug.Log("Fire Collected: " + fireObject.name);
             Destroy(fireObject);
-            barravida.RecargarEnergia(10f);
+            //barravida.RecargarEnergia(10f);
         }
     }
 
@@ -153,8 +169,8 @@ public class SamuraiController : MonoBehaviour
             anim.SetTrigger("Damage");
             Debug.Log("Player took damage!");
             vidaActual -= damageAmount;
-            barravida.CambiarVidaActual(vidaActual);
-            barravida.TakeDamage(damageAmount);
+            //barravida.CambiarVidaActual(vidaActual);
+           // barravida.TakeDamage(damageAmount);
         }
     }
 
@@ -180,7 +196,7 @@ public class SamuraiController : MonoBehaviour
             energiaActual = energiaMaxima;
         }
 
-        barravida.CambiarEnergiaActual(energiaActual);
+        //barravida.CambiarEnergiaActual(energiaActual);
     }
 
     public void Die()
@@ -193,4 +209,8 @@ public class SamuraiController : MonoBehaviour
             // Aquí puedes agregar más lógica si es necesario al morir el jugador
         }
     }
+
+    public void EnableBox() { boxDamage.EnabledBox(true); }
+
+    public void DisableBox() { boxDamage.EnabledBox(false); }
 }
