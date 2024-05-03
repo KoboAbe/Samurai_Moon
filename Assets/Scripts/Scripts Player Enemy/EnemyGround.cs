@@ -34,7 +34,7 @@ public class EnemyGround : MonoBehaviour
     private void FixedUpdate()
     {
 
-        if (isAlive.isAlive = true)
+        if (isAlive.isAlive == true)
         {
 
             if (!rangoVision.visto)
@@ -84,10 +84,10 @@ public class EnemyGround : MonoBehaviour
                 Girar();
             }
 
-            DistaceFromPlayer();
+           
 
         }
-
+      
     }
 
     private void Girar()
@@ -113,11 +113,7 @@ public class EnemyGround : MonoBehaviour
         damage.EnabledBox(false);
     }
 
-    public void DistaceFromPlayer()
-    {
-        var distance = Vector2.Distance(gameObject.transform.position, samurai.gameObject.transform.position);
-        // Debug.Log(distance);
-    }
+
 
     public void TakeDamage(float damageAmount)
     {
@@ -132,9 +128,12 @@ public class EnemyGround : MonoBehaviour
 
     public void Die()
     {
+        ani.SetBool("walk", false);
+        ani.SetBool("run", false);
+        ani.SetBool("attack", false);
 
         ani.SetTrigger("isDead");
-        Debug.Log("Player has died.");
+        Debug.Log("Enemy has died.");
         // Aquí puedes agregar más lógica si es necesario al morir el jugador
 
     }

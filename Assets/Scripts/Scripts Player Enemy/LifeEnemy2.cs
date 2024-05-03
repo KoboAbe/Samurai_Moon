@@ -21,10 +21,13 @@ public class LifeEnemy2 : MonoBehaviour
         if (isAlive)
         {
             enemyLife -= damagePoint;
+
             if (enemyLife <= 0)
             {
                 isAlive = false;
+                Debug.Log("esta muertp");
                 golem.Die();
+                Destroy(gameObject, 3f);
                 return;
             }
             golem.TakeDamage(10);

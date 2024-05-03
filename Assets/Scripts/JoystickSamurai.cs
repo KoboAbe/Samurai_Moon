@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,6 +15,8 @@ public class JoystickSamurai : MonoBehaviour
     private bool isGrounded; // Variable para verificar si el jugador está en el suelo
     private bool isAlive = true; 
     public float vidaActual;
+
+    public GameObject gameOverUI;
 
     public Player2D boxDamage;  
 
@@ -124,6 +127,9 @@ public class JoystickSamurai : MonoBehaviour
             isAlive = false;
             animator.SetTrigger("isDead");
             Debug.Log("Player has died.");
+            gameOverUI.SetActive(true);
+            Time.timeScale = 0f;
+
             // Aquí puedes agregar más lógica si es necesario al morir el jugador
         }
     }
