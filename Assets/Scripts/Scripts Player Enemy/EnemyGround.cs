@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveGolem2 : MonoBehaviour
+public class EnemyGround : MonoBehaviour
 {
     [SerializeField] private float speed, limit;
     public float speedRun;
@@ -11,7 +11,7 @@ public class MoveGolem2 : MonoBehaviour
     [SerializeField] private RangoEnemy rangoVision;
     [SerializeField] private RangoEnemy rangoVisionBack;
     [SerializeField] private HitEnemy2D hit;
-    public LifeEnemy isAlive;
+    public LifeEnemy2 isAlive;
     public float vidaActual;
 
 
@@ -27,7 +27,7 @@ public class MoveGolem2 : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         ani = GetComponent<Animator>();
-        samurai=GameObject.FindFirstObjectByType<SamuraiController>();
+        samurai = GameObject.FindFirstObjectByType<SamuraiController>();
 
     }
 
@@ -85,9 +85,9 @@ public class MoveGolem2 : MonoBehaviour
             }
 
             DistaceFromPlayer();
-          
+
         }
-     
+
     }
 
     private void Girar()
@@ -95,7 +95,7 @@ public class MoveGolem2 : MonoBehaviour
         moveRight = !moveRight;
         transform.eulerAngles = new Vector3(0, transform.eulerAngles.y + 180, 0);
         speed *= -1;
-        speedRun*=-1;
+        speedRun *= -1;
     }
     private void OnDrawGizmos()
     {
@@ -116,26 +116,26 @@ public class MoveGolem2 : MonoBehaviour
     public void DistaceFromPlayer()
     {
         var distance = Vector2.Distance(gameObject.transform.position, samurai.gameObject.transform.position);
-       // Debug.Log(distance);
+        // Debug.Log(distance);
     }
 
     public void TakeDamage(float damageAmount)
     {
-      
-            ani.SetTrigger("Damage");
-            Debug.Log("Player took damage!");
-            
-            //barravida.CambiarVidaActual(vidaActual);
-            // barravida.TakeDamage(damageAmount);
-        
+
+        ani.SetTrigger("Damage");
+        Debug.Log("Player took damage!");
+
+        //barravida.CambiarVidaActual(vidaActual);
+        // barravida.TakeDamage(damageAmount);
+
     }
 
     public void Die()
     {
-       
-            ani.SetTrigger("isDead");
-            Debug.Log("Player has died.");
-            // Aquí puedes agregar más lógica si es necesario al morir el jugador
-     
+
+        ani.SetTrigger("isDead");
+        Debug.Log("Player has died.");
+        // Aquí puedes agregar más lógica si es necesario al morir el jugador
+
     }
 }
