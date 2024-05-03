@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public SamuraiController samurai;
+    public JoystickSamurai samurai;
     private Rigidbody2D rb;
     public float force;
 
@@ -14,7 +14,7 @@ public class Bullet : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        samurai= GameObject.FindFirstObjectByType<SamuraiController>();
+        samurai= GameObject.FindFirstObjectByType<JoystickSamurai>();
 
         Vector3 direction = samurai.transform.position - transform.position;
         rb.velocity = new Vector2(direction.x,direction.y).normalized * force;
@@ -32,6 +32,10 @@ public class Bullet : MonoBehaviour
         if(collision.gameObject.CompareTag("PJ") )
          {
             collision.gameObject.GetComponent<LifeController>().TakeDamage(10);
+            Destroy(gameObject);
+        }
+        if (collision.gameObject.CompareTag("Ground"))
+        {
             Destroy(gameObject);
         }
     }
