@@ -48,12 +48,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicSource: {fileID: 3365796629446279601}
   sfxSource: {fileID: 4669197975847592520}
-  music: {fileID: 8300000, guid: ac153ac738cc3b44f8d1d94e0b3a7a6b, type: 3}
+  music: {fileID: 0}
   jump: {fileID: 8300000, guid: a042229535edbd248b5cbbe15c8affeb, type: 3}
   run: {fileID: 8300000, guid: 6febfd4fe62f7ea48b386b2b553b99de, type: 3}
   sword: {fileID: 8300000, guid: 45fe2700c100a7d40afb751e926bfeaa, type: 3}
-  golem: {fileID: 0}
-  golem_hit: {fileID: 0}
+  golem: {fileID: 8300000, guid: 1efaacbd7f8b2974e928c2c3acbb0cba, type: 3}
+  golem_hit: {fileID: 8300000, guid: 1031ae70c4f274c44928cfd9f207aa8f, type: 3}
 --- !u!1 &9061613522596569713
 GameObject:
   m_ObjectHideFlags: 0
